@@ -1,13 +1,72 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-Color: #EECEB9;
+    Color: blue;
+    /* width: 100%; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.music-body {
+    display: flex;
+    height: 100vh;
+}
+
+.left-panel {
+    flex: 2;
+    border: 3px solid #BB9AB1;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.middle-panel {
+    flex: 4;
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.right-panel{
+  flex: 4;
+
+}
+
+.welcomeText {
+    display: flex;
+    padding: 10px 0px;
+    Color: #987D9A;
+    /* background-Color: #677D6A; */
+    /* margin: auto; */
+    /* width: 50% */
+    /* border: 1px solid gray; */
+    flex: 50%;
+}
+
+.play-box{
+    border: 1 px solid gray;
+    padding: 5px 8px;
+    background: #FEFBD8;
+    margin: 2px;
+    border-radius: 5px;
+
+}
+
+.title-style{
+    margin: 2px;
+}
+
+.artiste-style{
+    margin: 2px
+}
+
+.cassette-style{
+    border: 100px solid white;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-Color: #987D9A;
 }
