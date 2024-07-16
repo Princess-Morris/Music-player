@@ -1,18 +1,34 @@
-import { IMusic } from "../types/music"
+import { FaPause, FaPlay } from "react-icons/fa";
+import { IMusicPlay } from "../types/music";
 
-function SongItem({id, title, artiste, genre, city}: IMusic) {
-    return (
-        <div className="play-box">
-        <div className="title-style">
-        title: {title}
-        </div>
+function SongItem({
+  id,
+  title,
+  artiste,
+  genre,
+  city,
+  song,
+  songPlay,
+  click,
+}: IMusicPlay) {
 
-        <div className="artiste-style">
-        artiste: {artiste}
+  return (
+    <div className="play-box">
+      <div className="">
+        <audio id={`audio-${id}`} src={song}></audio>
+        <div className="title-style">title: {title}</div>
 
-        </div>
-        </div>
-    )
+        <div className="artiste-style">artiste: {artiste}</div>
+      </div>
+
+      <div 
+      className="icon"
+      onClick={() => click(id)}
+      >
+        {songPlay === id ? <FaPause />  : <FaPlay />}
+      </div>
+    </div>
+  );
 }
 
-export default SongItem
+export default SongItem;

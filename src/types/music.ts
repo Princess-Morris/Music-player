@@ -8,8 +8,10 @@ export interface IMusic {
     artiste: string;
     genre: string;
     city?: string;
+    song: string;
 }
 
 export interface IMusicPlay extends IMusic {
-    // idPlaying
+    songPlay: string | undefined;
+    click: any;
 }

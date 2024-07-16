@@ -1,3 +1,4 @@
+import { song1, song2, song3, song4, song5, song6, song7 } from "../mock-songs"
 import { IMusic } from "../types/music"
 
 export const songArr: IMusic[] = [
@@ -7,6 +8,7 @@ export const songArr: IMusic[] = [
     artiste: "TashaCobbs",
     genre: "Soul",
     city: "Atlanta",
+    song: song1
    },
 
    {
@@ -15,6 +17,7 @@ export const songArr: IMusic[] = [
     artiste: "Cobbs",
     genre: "Gospel",
     city: "Maryland",
+    song: song2,
    },
 
    {
@@ -23,6 +26,7 @@ export const songArr: IMusic[] = [
     artiste: "Tasha",
     genre: "Western",
     city: "Texas",
+    song: song3,
    },
 
    {
@@ -31,6 +35,7 @@ export const songArr: IMusic[] = [
     artiste: "TashaCobbs Leonard",
     genre: "Western",
     city: "Chicago",
+    song: song4,
    },
 
    {
@@ -39,6 +44,7 @@ export const songArr: IMusic[] = [
     artiste: "Mrs TashaCobbs",
     genre: "Soul",
     city: "Atlanta",
+    song: song5,
    },
 
    {
@@ -47,6 +53,7 @@ export const songArr: IMusic[] = [
     artiste: "Mrs Leonard",
     genre: "soul",
     city: "Atlanta",
+    song: song6,
    },
 
    {
@@ -55,5 +62,6 @@ export const songArr: IMusic[] = [
     artiste: "TashaCobbs",
     genre: "soul",
     city: "Atlanta",
+    song: song7,
    }
 ]
