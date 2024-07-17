@@ -15,3 +15,7 @@ export interface IMusicPlay extends IMusic {
     songPlay: string | undefined;
     click: any;
 }
+
+export interface IProgressBar {
+    progress: number
+}

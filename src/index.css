@@ -17,7 +17,8 @@ body {
     border: 3px solid #BB9AB1;
     padding: 10px;
     border-radius: 5px;
-    margin: 5px;
+    margin: 5px 0px;
+    border-right: 10px solid #BB9AB1;
 }
 
 .middle-panel {
@@ -25,11 +26,14 @@ body {
     padding: 100px 0px;
     display: flex;
     justify-content: center;
+    background-Color: #FEFBD8;
+    margin: 5px 0px;
+    border: 1px solid #BB9AB1;
+    border-radius: 5px;
 }
 
 .right-panel{
   flex: 4;
-
 }
 
 .welcomeText {
@@ -39,12 +43,15 @@ body {
     flex: 50%;
 }
 
-.play-box{
-    border: 1 px solid gray;
+.play-wrapper{
     padding: 5px 8px;
     background: #FEFBD8;
     margin: 2px;
     border-radius: 5px;
+}
+
+.play-box{
+    /* border: 1 px solid gray; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,13 +66,51 @@ body {
     margin: 2px
 }
 
-.cassette-style{
-    border: 100px solid white;
+.progress-style{
+    /* width: 250px; */
+    height: 3px;
+    background-Color: lightgray;
+    border-radius: 8px;
+}
+
+
+
+/* middle panel */
+.playing-style{
+    border: 3px solid blue;
+    width: 80px;
+    height:80px;
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-Color: #987D9A;
+    padding: 5px;
 }
+
+.fa-pause{
+    width: 70px;
+    height: 70px;
+}
+
+.fa-play{
+    animation: spin 2s linear infinite;
+    transform-origin: center;
+    width: 70px;
+    height: 70px; 
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+/* .card-style{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+} */
