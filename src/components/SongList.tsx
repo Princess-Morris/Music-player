@@ -5,12 +5,13 @@ import SongItem from "./SongItem"
 function SongList () {
 
     const [songPlaying, setSongPlaying] = useState<string | undefined>(undefined)
+    const [play, setPllay] = useState<boolean>(false);
 
     function handlePlay(song_id: string) {
         const SongList= document.querySelectorAll('audio');
         SongList.forEach((song: HTMLAudioElement) => {
             song.pause()
-            song.currentTime = 0
+            // song.currentTime = 0
 
             if(song_id === songPlaying){
                 setSongPlaying(undefined)

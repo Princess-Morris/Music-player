@@ -69,13 +69,14 @@ body {
 .progress-style{
     /* width: 250px; */
     height: 3px;
-    background-Color: lightgray;
+    background-Color: red;
     border-radius: 8px;
+
 }
 
 
 
-/* middle panel */
+/* middle panel */ 
 .playing-style{
     border: 3px solid blue;
     width: 80px;

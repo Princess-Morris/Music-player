@@ -34,7 +34,9 @@ function SongItem({
   function updateProgress(){
     if(songRef.current){
       const {currentTime, duration} = songRef.current;
-      setProgress((currentTime / duration) * 100)
+      if (duration > 0) {
+        setProgress((currentTime / duration) * 100)
+      }
     }
   }
 
